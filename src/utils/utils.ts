@@ -9,7 +9,14 @@ const formatter: Intl.DateTimeFormat =
     timeZone: 'UTC',
   });
 
-export const getFormattedDate = (date: Date): string => (date ? formatter.format(date) : '');
+  const formatter2 = new Intl.DateTimeFormat('zh-CN', {
+    year: 'numeric', 
+    month: 'numeric',
+    day: 'numeric'  
+  });
+// export const getFormattedDate = (date: Date): string => (date ? formatter.format(date) : '');
+export const getFormattedDate = (date: Date): string => (date ? formatter2.format(date) : '');
+
 
 export const trim = (str = '', ch?: string) => {
   let start = 0,
