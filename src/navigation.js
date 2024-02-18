@@ -21,7 +21,7 @@ export const headerData = {
         //   href: getPermalink('markdown-elements-demo-post', 'post'),
         // },
         {
-          text: '分类',
+          text: '文章',
           href: getPermalink('tutorials', 'category'),
         },
         // {

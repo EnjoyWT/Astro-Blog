@@ -17,6 +17,7 @@ export interface Props {
 
 const { post, url } = Astro.props;
 const { Content } = post;
+
 ---
 
 <section class="py-8 sm:py-16 lg:py-20 mx-auto">
@@ -26,7 +27,7 @@ const { Content } = post;
         <p>
           <Icon name="tabler:clock" class="w-4 h-4 inline-block -mt-0.5 dark:text-gray-400" />
           <time datetime={String(post.publishDate)} class="inline-block">{getFormattedDate(post.publishDate)}</time>
-          {
+          <!-- {
             post.category && (
               <>
                 {' '}
@@ -36,7 +37,7 @@ const { Content } = post;
                 </a>
               </>
             )
-          }
+          } -->
           {post.readingTime && <> · 阅读时长：{post.readingTime} 分钟 </>}
         </p>
       </div>
