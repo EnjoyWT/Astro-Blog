@@ -24,10 +24,10 @@ export const headerData = {
           text: '文章',
           href: getPermalink('tutorials', 'category'),
         },
-        // {
-        //   text: 'Tag Page',
-        //   href: getPermalink('astro', 'tag'),
-        // },
+        {
+          text: '标签',
+          href: getPermalink('/tags'),
+        },
       ],
     }
   ]
