@@ -3,6 +3,10 @@ import { SITE } from '~/utils/config';
 import logo from '~/assets/images/origin.png'
 import Image from '~/components/common/Image.astro';
 
+const {
+  id = "Logo",
+  isDark = false,
+} = Astro.props;
 ---
 
 
@@ -10,7 +14,7 @@ import Image from '~/components/common/Image.astro';
     {SITE?.name}
   </span>
   <div class="pl-2"> 
-    <Image  src={logo} alt="44" width={30}, height={30}> 
+    <Image class="dark:filter dark:invert" src= {logo } alt="44" width={30}, height={30}> 
   </div>
 
 

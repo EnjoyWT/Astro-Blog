@@ -42,12 +42,12 @@ const { Content } = post;
         </p>
       </div>
       <h1
-        class="px-4 sm:px-6 max-w-3xl mx-auto text-4xl md:text-5xl font-bold leading-tighter tracking-tighter font-heading"
+        class="px-4 sm:px-6 max-w-3xl mx-auto text-4xl md:text-2xl font-bold leading-tighter tracking-tighter font-heading"
       >
         {post.title}
       </h1>
       <p
-        class="max-w-3xl mx-auto mt-4 mb-8 px-4 sm:px-6 text-xl md:text-2xl text-muted dark:text-slate-400 text-justify"
+        class="max-w-3xl mx-auto mt-4 mb-8 px-4 sm:px-6 text-xl md:text-xl text-muted dark:text-slate-400 text-justify"
       >
         {post.excerpt}
       </p>
@@ -56,12 +56,11 @@ const { Content } = post;
         post.image ? (
           <Image
             src={post.image}
-            class="max-w-full lg:max-w-[900px] mx-auto mb-6 sm:rounded-md bg-gray-400 dark:bg-slate-700"
-            widths={[400, 900]}
-            sizes="(max-width: 900px) 400px, 900px"
+            class="max-w-3xl lg:max-w-[800px] mx-auto mb-6 sm:rounded-md bg-gray-400 dark:bg-slate-700"
+            sizes="(max-width: 500px) 400px, 500px"
             alt={post?.excerpt || ''}
-            width={900}
-            height={506}
+            width={700}
+            height={406}
             loading="eager"
             decoding="async"
           />
