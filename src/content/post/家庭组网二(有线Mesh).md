@@ -1,0 +1,27 @@
+---
+publishDate: 2024-07-01T00:00:00Z
+title: 家庭组网二 有线Mesh 
+excerpt: 有线Mesh的相关实现和注意点
+image: https://picx.zhimg.com/v2-a55178b387cf34060f4d81a44b01419e_r.webp?source=172ae18b&consumer=ZHI_MENG
+category: 组网
+---
+
+#### 有线Mesh
+
+网络结构图
+
+![家庭Mesh示意图](https://pics5.baidu.com/feed/ac6eddc451da81cb3ae301aefbdba61f08243196.jpeg@f_auto?token=fca768c92ead0d92ee56b16279175469)
+
+ ##### 注意点
+
+1. 弱电箱到客厅主路由的线槽中需要放**两根**光纤. 除非是主路由 放在弱电箱口处。
+
+
+
+#### 设备清单
+
+ 是否需要购买交换机？
+
+**交换机：**GS308 八口 价格 美国网件（NETGEAR）GS308 8端口 1000M铁壳以太网交换机 京东价格 228 ，咸鱼 几十
+
+**路由器：**
