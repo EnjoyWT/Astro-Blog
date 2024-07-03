@@ -1,0 +1,19 @@
+---
+import { Icon } from 'astro-icon/components';
+import { SITE } from '~/utils/config';
+import { getHomePermalink } from '~/utils/permalinks';
+
+export interface Props {
+  footNote?: string;
+  theme?: string;
+}
+
+const { footNote = '', theme = 'light' } = Astro.props;
+const currentYear = new Date().getFullYear();
+---
+
+<footer class:list={[{ dark: theme === 'dark' }, 'relative border-t border-gray-200 dark:border-slate-800 not-prose']}>
+  <div class="flex flex-row justify-center text-sm mr-4 dark:text-slate-400 h-10 items-center">
+    Copyright {currentYear} JoyTim · 赛德沃克
+  </div>
+</footer>

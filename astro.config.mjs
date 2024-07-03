@@ -9,6 +9,7 @@ import mdx from '@astrojs/mdx';
 import partytown from '@astrojs/partytown';
 import icon from 'astro-icon';
 import tasks from './src/utils/tasks';
+// import vue from '@astrojs/vue';
 
 import { readingTimeRemarkPlugin, responsiveTablesRehypePlugin } from './src/utils/frontmatter.mjs';
 
@@ -60,6 +61,7 @@ export default defineConfig({
     ),
 
     tasks(),
+    // vue(),
   ],
 
   image: {

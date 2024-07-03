@@ -1,5 +1,5 @@
 ---
-publishDate: 2024-07-01T00:00:00Z
+publishDate: 2024-07-01T00:01:00Z
 title: 家庭组网二 有线Mesh 
 excerpt: 有线Mesh的相关实现和注意点
 image: https://picx.zhimg.com/v2-a55178b387cf34060f4d81a44b01419e_r.webp?source=172ae18b&consumer=ZHI_MENG
@@ -10,7 +10,7 @@ category: 组网
 
 网络结构图
 
-![家庭Mesh示意图](https://pics5.baidu.com/feed/ac6eddc451da81cb3ae301aefbdba61f08243196.jpeg@f_auto?token=fca768c92ead0d92ee56b16279175469)
+![有线Mesh走线](https://pic4.zhimg.com/v2-fde8d190378cfd6ce5d0f5239f8d3e6f_b.webp?consumer=ZHI_MENG)
 
  ##### 注意点
 
@@ -29,3 +29,5 @@ category: 组网
 ap 面板-  
 
 AP300XGI-CT ，一拖三
+
+TP-LINK XDR5480  先买一个测试。信号不行再添加

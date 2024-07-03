@@ -2,6 +2,8 @@
 import Layout from '~/layouts/Layout.astro';
 import Header from '~/components/widgets/Header.astro';
 import Footer from '~/components/widgets/Footer.astro';
+import FooterCopyRight from '~/components/widgets/FooterCopyRight.astro';
+
 import Announcement from '~/components/widgets/Announcement.astro';
 
 import { headerData, footerData } from '~/navigation';
@@ -16,9 +18,8 @@ const { metadata } = Astro.props;
 ---
 
 <Layout metadata={metadata}>
-  
   <slot name="header">
-    <Header {...headerData} isSticky  showToggleTheme position='left'/>
+    <Header {...headerData} isSticky showToggleTheme position="left" />
   </slot>
   <main>
     <slot />
@@ -26,4 +27,7 @@ const { metadata } = Astro.props;
   <!-- <slot name="footer">
     <Footer {...footerData} />
   </slot> -->
+  <slot name="footer">
+    <FooterCopyRight {...footerData} />
+  </slot>
 </Layout>

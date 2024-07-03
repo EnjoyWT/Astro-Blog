@@ -25,7 +25,8 @@
     "lodash.merge": "^4.6.2",
     "pagefind": "^1.0.4",
     "typescript-esbuild": "^0.3.2",
-    "unpic": "^3.15.0"
+    "unpic": "^3.15.0",
+    "vanilla-tilt": "^1.8.1"
   },
   "devDependencies": {
     "@astrojs/mdx": "^2.0.0",

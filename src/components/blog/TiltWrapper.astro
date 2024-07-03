@@ -1,0 +1,37 @@
+---
+
+---
+
+<div class="tilt-element">
+  <!-- <h2>Tilt Me!</h2>
+  <p>This element will tilt when you hover over it.</p> -->
+  <slot />
+</div>
+
+<script>
+  import VanillaTilt from 'vanilla-tilt';
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const elements = document.querySelectorAll('.tilt-element');
+    VanillaTilt.init(elements, {
+      scale: 1.05,
+      max: 25,
+      speed: 400,
+      glare: true,
+      'max-glare': 0.5,
+    });
+  });
+</script>
+
+<style>
+  /* .tilt-element {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    margin: 50px auto;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  } */
+</style>
