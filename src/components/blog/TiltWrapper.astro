@@ -12,7 +12,9 @@
   import VanillaTilt from 'vanilla-tilt';
 
   document.addEventListener('DOMContentLoaded', () => {
-    const elements = document.querySelectorAll('.tilt-element');
+    const elements = Array.from(document.querySelectorAll('.tilt-element')).filter(
+      (el): el is HTMLElement => el instanceof HTMLElement
+    );
     VanillaTilt.init(elements, {
       scale: 1.05,
       max: 25,
