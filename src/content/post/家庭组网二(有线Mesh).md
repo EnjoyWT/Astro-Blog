@@ -31,3 +31,4 @@ ap 面板-
 AP300XGI-CT ，一拖三
 
 TP-LINK XDR5480  先买一个测试。信号不行再添加
+![d](../../../public/app-j-logo.png)
