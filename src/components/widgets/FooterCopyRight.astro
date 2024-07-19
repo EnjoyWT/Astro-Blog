@@ -13,7 +13,20 @@ const currentYear = new Date().getFullYear();
 ---
 
 <footer class:list={[{ dark: theme === 'dark' }, 'relative border-t border-gray-200 dark:border-slate-800 not-prose']}>
-  <div class="flex flex-row justify-center text-sm mr-4 dark:text-slate-400 h-10 items-center">
-    Copyright {currentYear} JoyTim · 赛德沃克
+  <div class="flex flex-row justify-center text-sm mr-4 dark:text-slate-400 h-20 items-center">
+    Copyright <span style="margin: 0.5em;">{currentYear}</span>
+    <a href="https://github.com/EnjoyWT" target="_blank" rel="noopener noreferrer" class="hover-effect">
+      JoyTim · 赛德沃克
+    </a>
   </div>
 </footer>
+
+<style>
+  .hover-effect {
+    transition: all 0.3s ease;
+  }
+  .hover-effect:hover {
+    font-weight: bold;
+    color: #007bff; /* 鲜亮的蓝色 */
+  }
+</style>

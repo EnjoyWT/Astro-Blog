@@ -9,13 +9,12 @@ import Features3 from '~/components/widgets/Features3.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
-import { getBlogPermalink } from "~/utils/permalinks";
+import { getBlogPermalink } from '~/utils/permalinks';
 
 const metadata = {
   title: 'YOLO',
 };
-const blogUrl = getBlogPermalink()
-
+const blogUrl = getBlogPermalink();
 ---
 
 <Layout metadata={metadata}>
@@ -28,23 +27,20 @@ const blogUrl = getBlogPermalink()
         // { text: 'Resume', href: '#resume' },
         // { text: 'Porfolio', href: '#porfolio' },
         { text: '文章', href: blogUrl },
-        { text: 'Github', href: 'https://github.com/EnjoyWT' },
+        // { text: 'Github', href: 'https://github.com/EnjoyWT' },
       ]}
       isSticky
       showToggleTheme
-      position='left'
+      position="left"
     />
   </Fragment>
 
   <!-- Hero2 Widget ******************* -->
 
-  <Hero
-    id="hero"
-    title="  "
-    tagline=""
-  >
+  <Hero id="hero" title="  " tagline="">
     <Fragment slot="subtitle">
-      这里是用来记录生活中的一些事情的地方 <br /> 可以会记录一些程序代码，一些短暂的没有缘由的想法，一些看着莫名其妙但是好玩的事情，
+      这里是用来记录生活中的一些事情的地方 <br />
+      可以会记录一些程序代码，一些短暂的没有缘由的想法，一些看着莫名其妙但是好玩的事情，
       大部分是一个有限个体对这个复杂而又简单的世界的一点带有偏见的记录。
     </Fragment>
   </Hero>
@@ -87,13 +83,13 @@ const blogUrl = getBlogPermalink()
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">关于</h3>
-     
+
+      <br />
+      <p>尝试记录一些东西</p>
       <br />
       <p>
-        尝试记录一些东西
+        如果这里记录的东西，你碰巧有相同的感触，或者想要跟进一步的分享你的内容，可以关注我，如果你愿意，相信你可以找到联系方式
       </p>
-      <br />
-      <p>如果这里记录的东西，你碰巧有相同的感触，或者想要跟进一步的分享你的内容，可以关注我，如果你愿意，相信你可以找到联系方式</p>
     </Fragment>
 
     <Fragment slot="bg">
@@ -139,10 +135,10 @@ const blogUrl = getBlogPermalink()
       },
     ]}
     classes={{ container: 'max-w-3xl' }}
-  /> --> 
+  /> -->
 
   <!-- Features3 Widget ************** -->
-<!-- 
+  <!-- 
   <Features3
     title="Skills"
     subtitle="Discover the proficiencies that allow me to bring imagination to life through design."
@@ -188,12 +184,7 @@ const blogUrl = getBlogPermalink()
     ]}
   /> -->
 
-  
-
   <!-- Testimonials Widget *********** -->
-
-
- 
 
   <!-- BlogLatestPost Widget **************** -->
 
