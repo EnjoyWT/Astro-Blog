@@ -61,6 +61,7 @@ export default defineConfig({
     ),
 
     tasks(),
+    import.meta.env.SSR ? null : import('astro-icon'),
     // vue(),
   ],
 
