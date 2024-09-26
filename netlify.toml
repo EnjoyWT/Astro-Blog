@@ -1,6 +1,6 @@
 [build]
   publish = "dist"
-  command = "npm run build"
+  command = "npm install @iconify/tools@^4.0.4 && npm run build"
 [build.processing.html]
   pretty_urls = false
 [[headers]]
